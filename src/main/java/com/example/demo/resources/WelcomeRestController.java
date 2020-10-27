@@ -27,5 +27,9 @@ public class WelcomeRestController {
 		return "Id:12 | Name:Sahil | Email:demo@demo.com" ;
 	}
 	
+	@GetMapping("/greet")
+	public String returnGreet() {
+		return "Hello User" ;
+	}
 	
 }	
