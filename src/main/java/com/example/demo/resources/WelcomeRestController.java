@@ -17,7 +17,7 @@ public class WelcomeRestController {
 		return "Welcome to Sporty Shoes !" + name;
 	}
 		
-	@GetMapping("/admin")
+	@GetMapping("/admins")
 	public String returnAdmin() {
 		return "Name: Deepak. Contact: deepak.kumar@prolim.com" ;
 	}
