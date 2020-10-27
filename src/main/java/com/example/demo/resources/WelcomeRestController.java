@@ -22,4 +22,10 @@ public class WelcomeRestController {
 		return "Name: Deepak. Contact: deepak.kumar@prolim.com" ;
 	}
 	
+	@GetMapping("/user")
+	public String returnUser() {
+		return "Id:12 | Name:Sahil | Email:demo@demo.com" ;
+	}
+	
+	
 }	
