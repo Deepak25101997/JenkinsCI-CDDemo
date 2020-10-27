@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import springfox.documentation.spring.web.json.Json;
 
 @Api(value = "Swagger2WelcomeRestController", description = "This REST Api related to Welcome Message!!!!")
 @RestController
@@ -17,6 +16,10 @@ public class WelcomeRestController {
 	public String welcome(@PathVariable("name") String name) {
 		return "Welcome to Sporty Shoes !" + name;
 	}
+		
+	@GetMapping("/admin}")
+	public String returnAdmin() {
+		return "Name: Deepak. Contact: deepak.kumar@prolim.com" ;
+	}
 	
-
-}
+}	
